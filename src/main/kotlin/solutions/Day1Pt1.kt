@@ -16,6 +16,6 @@ class Day1Pt1(
     override fun run() {
         val input = loadInput()
         val intList = findEntriesSummingTo2020(input)
-        println("Day 1 Answer (pt.1): ${intList.first() * intList.last()}")
+        println("Day 1 (pt.1): ${intList.first() * intList.last()}")
     }
 }

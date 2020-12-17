@@ -8,10 +8,10 @@ class Day1Pt2(
 ) : Puzzle(fileName) {
 
     private fun find3EntriesSummingTo2020(input: Input): List<Int> {
-        val queueOfNumbers = input.inputData
+        val sortedListOfNumbers = input.inputData
             .map { Integer.parseInt(it) }
             .sorted()
-
+        
         //TODO: Implement algorithm to find 3 unique numbers and return
         return emptyList()
     }
@@ -19,6 +19,6 @@ class Day1Pt2(
     override fun run() {
         val input = loadInput()
         val intList = find3EntriesSummingTo2020(input)
-        println("Day 1 Answer (pt.2): TODO")
+        println("Day 1 (pt.2): TODO")
     }
 }
