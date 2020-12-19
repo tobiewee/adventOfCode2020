@@ -9,7 +9,7 @@ class Day3Pt1(
 
     private fun countTreesOnR3D1Slope(input: Input): Int {
         //TODO: Implement count for slope, moving right 3, and down 1
-        return 0
+        return -1
     }
 
     override fun run() {

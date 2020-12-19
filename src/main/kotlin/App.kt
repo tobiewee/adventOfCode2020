@@ -1,7 +1,4 @@
-import solutions.Day1Pt1
-import solutions.Day1Pt2
-import solutions.Day2Pt1
-import solutions.Day2Pt2
+import solutions.*
 import solutions.`interface`.Puzzle
 
 fun main() {
@@ -10,7 +7,8 @@ fun main() {
         Day1Pt1(),
         Day1Pt2(),
         Day2Pt1(),
-        Day2Pt2()
+        Day2Pt2(),
+        Day3Pt1()
     )
     puzzles.forEach(Puzzle::run)
 }
