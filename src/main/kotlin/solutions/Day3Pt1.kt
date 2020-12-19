@@ -14,7 +14,7 @@ class Day3Pt1(
 
     override fun run() {
         val input = loadInput()
-        println("Day 2 (pt.2): ${countTreesOnR3D1Slope(input)}")
+        println("Day 3 (pt.1): ${countTreesOnR3D1Slope(input)}")
     }
 
     companion object {
