@@ -8,8 +8,25 @@ class Day3Pt1(
 ) : Puzzle(fileName) {
 
     private fun countTreesOnR3D1Slope(input: Input): Int {
-        //TODO: Implement count for slope, moving right 3, and down 1
-        return -1
+        var treesFound = 0
+        var searchPositionAcross = 0
+        var searchPositionDown = 0
+        input.inputData
+            .map {
+                it.toCharArray()
+            }
+            .forEach { pattern ->
+                if (searchPositionDown != 0) {
+                    var patternLength = pattern.size
+                    searchPositionAcross += STEPS_RIGHT
+                    val indexAcross = searchPositionAcross % patternLength
+                    if (pattern[indexAcross] == TREE) {
+                        treesFound += 1
+                    }
+                }
+                searchPositionDown++
+            }
+        return treesFound
     }
 
     override fun run() {
@@ -18,7 +35,7 @@ class Day3Pt1(
     }
 
     companion object {
-        private const val OPEN_SQUARE = "."
-        private const val TREE = "#"
+        private const val TREE = '#'
+        private const val STEPS_RIGHT = 3
     }
 }
