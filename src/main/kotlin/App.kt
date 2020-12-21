@@ -8,7 +8,8 @@ fun main() {
         Day1Pt2(),
         Day2Pt1(),
         Day2Pt2(),
-        Day3Pt1()
+        Day3Pt1(),
+        Day3Pt2()
     )
     puzzles.forEach(Puzzle::run)
 }

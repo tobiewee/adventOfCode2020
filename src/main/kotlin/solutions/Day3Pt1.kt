@@ -17,7 +17,7 @@ class Day3Pt1(
             }
             .forEach { pattern ->
                 if (searchPositionDown != 0) {
-                    var patternLength = pattern.size
+                    val patternLength = pattern.size
                     searchPositionAcross += STEPS_RIGHT
                     val indexAcross = searchPositionAcross % patternLength
                     if (pattern[indexAcross] == TREE) {
