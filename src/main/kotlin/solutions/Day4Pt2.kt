@@ -3,7 +3,7 @@ package solutions
 import models.Input
 import solutions.`interface`.Puzzle
 
-class Day4Pt1(
+class Day4Pt2(
     private val fileName: String = "d4_input.txt"
 ) : Puzzle(fileName) {
 
@@ -39,12 +39,12 @@ class Day4Pt1(
                 Pair(splitComponent[0], splitComponent[1])
             }
             .map {
-                passportValidator.validatePairFields(it)
+                passportValidator.validatePairDetails(it)
             }
     }
 
     override fun run() {
         val input = loadInput()
-        println("Day 4 (pt.1): ${countValidPassports(input)}")
+        println("Day 4 (pt.2): ${countValidPassports(input)}")
     }
 }
